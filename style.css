@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+
+}
+
+body {
+    background: #1f242d;
+    color: #fff;
+}
+
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 10%;
+    background: #2c323d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    z-index: 100; 
+
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a{
+    display: inline-block; 
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500s;
+    margin-left: 35px;
+    transition: .1s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+
+
+}
+
+.navbar a:hover , 
+.navbar a.active{
+    color: #0ef;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+img {
+    width: 650px;
+    height: auto; 
+    margin-right: -20px;
+    opacity: 0;
+    animation: ZoomIn 1.5s ease forwards 0.5s, floatImage 4s ease-in-out 2s infinite;
+}
+    
+
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.home-content h3 span{
+    color: #0ef;
+    
+
+}
+
+
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .1s;
+}
+.pstyle{
+    font-size: 17px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .5s;
+    
+}
+
+.soical-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0 ;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s * var(--i))
+
+
+}
+
+.soical-media a:hover{
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn:hover{
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.btn{
+
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+
+}
+
+/* keyfram animation*/
+
+@keyframes slideRight {
+
+    0%
+    {
+        transform : translateX(-100px); 
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform : translateX(-100px); 
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+
+    0%
+    {
+        transform : translateY(-100px); 
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform : translateY(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+
+    0%
+    {
+        transform : translateY(-100px); 
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform : translateY(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+
+    0%
+    {
+        transform : translateY(100px); 
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform : translateY(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes ZoomIn {
+
+    0%
+    {
+        transform : scale(0); 
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform : scale(1); 
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+
+}
+
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: aliceblue;
+    display: none;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #24282e;
+}
+
+.color-about{
+    color: #0ef;
+
+}
+
+.heading{
+    font-size: 3.5rem;
+   
+   
+}
+
+.new-class{
+    text-align: center;
+}
+
+
+.about-content{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.services h2{
+    margin-bottom: 5rem;
+
+}
+
+.services-con{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.services-con .services-box {
+    flex: 1 1 30%; /* Ensure the boxes are of equal width and grow to fit */
+    background: #272b32;
+    padding: 2rem 1.5rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease, transform 0.5s ease;
+}
+
+.services-con .services-box:hover {
+   border-color: rgb(36, 239, 253); /* Change border color on hover */
+   transform: scale(1.05); /* Optional: slightly enlarge the box on hover */
+}
+
+
+.services-box i{
+    font-size: 3rem;
+    color: #0ef;
+    
+}
+
+.services-box h3{
+    font-size: 2rem;
+    color: rgb(134, 167, 169);
+   
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+
+}
+
+.contact form {
+    max-width: 70rem; /* Adjust container width */
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; /* Ensure input-box takes full width */
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%; /* Make input fields take full width */
+    padding: 0.8rem; /* Increase padding inside input fields */
+    font-size: 1.6rem; /* Adjust the font size */
+    color: #2c323d;
+    background: #e2e8f1;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-sizing: border-box; /* Include padding and border in the element's width/height */
+}
+
+.contact form textarea {
+    height: 200px; /* Set a larger height for text areas */
+    resize: vertical; /* Allows vertical resizing */
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: #272b32;
+}
+
+/** this code for screen sizes */ 
+
+/* Media Queries */
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+      padding: 2rem 3%;
+
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+/**
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #2c323d;
+        border-top: .1rem solid #0e0f10;
+        box-shadow: 0 .5rem 1rem #0e0f10;
+    }
+
+    */
+
+/** small screen codes*/
+    .navbar.active{
+        display: block;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+      padding: 2rem 3%;
+
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 30%;
+        padding: 2rem 3%;
+        background: #2c323d;
+        border-top: .1rem solid #0e0f10;
+        box-shadow: 0 .5rem 1rem #0e0f10;
+        
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+
+        margin: 3rem;
+    }
+
+    .home{
+        flex-direction: column;
+    
+    }
+    .home-content h3{
+        font-size: 2rem;
+    }
+
+    .home-content h1{
+        font-size: 3rem;
+    }
+    
+    .home-img img{
+        width: 100Vw;
+        margin-top: .6rem;
+        display: flex;
+    
+    }
+    
+    .about{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    
+    
+    .about img{
+        width: 100Vw;
+        margin-top: 5rem;;
+    
+    }
+
+    .services h2{
+        margin-bottom: 3rem;
+    }
+
+    
+    
+
+}
+
+    @media (max-width: 768px) {
+        .header {
+            padding: 0.8rem 3%; /* Reduce padding */
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+      
+   
+}
+
+.logo {
+    text-align: right; /* Align the logo text to the right */
+    margin-right: 0; /* Ensure no margin that could push it off-screen */
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 1; /* Ensure the logo is fully visible */
+    animation: none; /* Temporarily remove animation for debugging */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 18px; /* Reduce font size slightly for smaller screens */
+        margin-right: 0; /* Remove extra margin that might push it off-screen */
+    }
+
+  
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 18px; /* Increase font size for smaller screens */
+    }
+}
+
+/* Further increase font size for very small screens (like phones) */
+@media (max-width: 480px) {
+    p {
+        font-size: 15px; /* Even bigger font size for very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

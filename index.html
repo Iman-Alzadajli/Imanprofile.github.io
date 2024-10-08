@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iman Profile Page</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- icons-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">.Portfolio</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+    
+        <nav class="navbar">
+            <!-- Update `href` attributes to match section IDs -->
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#services" style="--i:3;">Services</a>
+         <!--   <a href="#portfolio" style="--i:4;">Portfolio</a> -->
+            <a href="#contact" style="--i:5;">Contact</a> 
+        </nav>
+       </header>
+    
+       <!-- Home Section -->
+       <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Iman AL-Zadjali</h1>
+            <h3>and I'm a <span class="multiple-text"></span></h3>
+            <p class="pstyle">Welcome to My Portfolio! Explore my creative journey, where passion meets innovation. Let’s connect and bring your ideas to life!</p>
+            
+            <div class="soical-media">
+                <a href="https://www.facebook.com/profile.php?id=61566999172240"  target="_blank" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="https://x.com/Zzadjalia331?t=jL8SX6ZQl_Xkmfxbpl5-Bg&s=09" target="_blank" style="--i:8"><i class='bx bx-x' ></i></a>
+                <a href="https://www.instagram.com/zzadjalia/" target="_blank" style="--i:9"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://om.linkedin.com/in/iman-al-zadjali-84450a220?trk=people-guest_people_search-card" target="_blank" style="--i:10"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+          <!--  <a href="C:\Users\idres\OneDrive\Desktop\Portfolio_Website\Iman Adam Zadjali_CV.pdf" class="btn"> Download CV </a>-->
+
+    </div>
+
+    <div class="home-img">
+      <img src="home.png" alt="something went wrong">
+  </div>
+
+  
+</section>
+
+<!--about-->
+<section class="about" id="about">
+    <div class="about-img">
+    <img src="home.png" alt="something went wrong">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span class="color-about">Me</span></h2>
+       <!-- <h3> Software Developer</h3>-->
+        <p>
+            Hi, I'm Iman Alzdajali!<br>
+            I'm a passionate software engineer, proudly graduated from the University of Technology and Applied Science.<br>
+             Alongside my love for technology, I explore my creative side through voice-over and voice acting. It's always exciting 
+             to bring characters to life! <br>I also dabble in design from time to time, finding joy in blending 
+             creativity with logic. <br> Based in the beautiful country of Oman<br> 
+            I'm always looking for ways to grow, learn, and create cool things that make a difference.
+        </p><br>
+
+       <!-- <a href="#" class="btn"> Read More </a> -->
+    </div>
+</section>
+
+<!-- services-->
+
+<section class="services"  id="services"> <br>
+    <h2 class="heading new-class" > My <span class="color-about">Services</span></h2>
+    <div class="services-con">
+        <div class="services-box">
+            <i class='bx bx-code-alt' ></i>
+            <h3>Web Development</h3>
+            <p>
+              I design attractive,friendly HTML pages with stylish CSS that stand out.
+               Whether you need a portfolio, a practical web page, or a custom project, I can bring your vision to
+               life with creativity and care. Let’s collaborate to create something amazing!</p><br>
+
+                  <a href="https://github.com/Iman-Alzadajli"  target="_blank"  class="btn"> Check My Projects </a>
+                 </div>
+
+                  <div class="services-box">
+                    <i class='bx bx-microphone' ></i>
+                    <h3>Voice servives </h3>
+                    <p>
+                      I’m a voice actor who brings characters to life in anime, cartoons, and games,
+                       offering diverse voices in English and Arabic. I provide voice-over services for ads and IVR 
+                       messagesfocusing on quality and creativity to engage your audience!
+                      </p><br>
+                          
+                          <a href="https://soundeals.com/user/67034b7d71a1a"  target="_blank"  class="btn"> Check Voice Services </a> </div>
+
+                          <div class="services-box">
+                            <i class='bx bxs-paint' ></i>
+                           <h3>Desgining</h3>
+                            <p>I craft beautiful, bespoke designs for wedding invitations, birthday cards, and special events,
+                               ensuring each piece reflects the unique spirit of your celebration. 
+                              Let’s make your moments unforgettable with stunning visuals!</p><br>
+                                  
+                                  <a href="https://www.behance.net/imanalzadajali"   target="_blank"  class="btn"> Check My Work </a></div>
+        </div>
+    </div>
+</section><br>
+
+
+<section class="contact" id="contact">
+    <br>
+    <h2 class="heading new-class">Contact <span class="color-about">Me</span></h2>
+    
+    <!-- Updated form with additional validation -->
+    <form id="contactForm" action="https://formspree.io/f/xrbgzqoe" method="POST">
+      
+      <div class="input-box">
+        <input type="text" name="name" id="name" placeholder="Full Name" maxlength="50" required>
+        <small id="name-error" class="error-message"></small>
+      </div>
+      
+      <div class="input-box">
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+        <small id="email-error" class="error-message"></small>
+      </div>
+      
+      <div class="input-box">
+        <input type="text" name="subject" id="subject" placeholder="Email Subject" maxlength="80" required>
+        <small id="subject-error" class="error-message"></small>
+      </div>
+      
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <small id="message-error" class="error-message"></small>
+  
+      <input type="submit" value="Send message" class="btn">
+      
+    </form>
+  
+    <div id="form-message"></div> <!-- To display success/error messages -->
+  </section>
+  
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+  
+      const nameError = document.getElementById('name-error');
+      const emailError = document.getElementById('email-error');
+      const formMessage = document.getElementById('form-message');
+      const subjectError = document.getElementById('subject-error');
+
+  
+      let valid = true;
+  
+      // Clear previous error messages
+      nameError.textContent = '';
+      emailError.textContent = '';
+      formMessage.textContent = '';
+      subjectError.textContent = '';
+  
+      // Name validation: Ensure it's not too long
+      if (name.length > 50) {
+        nameError.textContent = "Name must be less than 50 characters.";
+        valid = false;
+      }
+
+      if (subject.length > 50) {
+        nameError.textContent = "subject must not be too long.";
+        valid = false;
+      }
+  
+      // Email validation: Simple email regex pattern
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        emailError.textContent = "Please enter a valid email address.";
+        valid = false;
+      }
+  
+      // If the form isn't valid, prevent submission and show error message
+      if (!valid) {
+        e.preventDefault();
+        formMessage.textContent = "Please correct the highlighted errors.";
+        formMessage.style.color = "red";
+      } else {
+        formMessage.textContent = "Sending...";
+        formMessage.style.color = "blue";
+      }
+    });
+  </script>
+  
+  <style>
+    .error-message {
+      color: red;
+      font-size: 0.9rem;
+    }
+  </style>
+  
+  
+<!--footer-->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; Iman. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+<!--for protection -->
+<script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+
+
+
+</body>
+</html>
